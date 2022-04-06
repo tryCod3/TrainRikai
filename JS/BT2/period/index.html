@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+    <div id="container">
+        <div class="wrapper">
+            <div class="header-wrapper">
+                <h1>Calculate monthly electricity bill for custommer</h1>
+            </div>
+            <div class="body-wrapper">
+                <form onSubmit="return false">
+                    <table style="width: 100%">
+                        <thead>
+                            <tr>
+                                <th>title</th>
+                                <th>description</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="table-item">
+                                <td>
+                                    <label for="col1">
+											start-up period:</label
+										>
+									</td>
+									<td>
+										<input
+											id="col1"
+											type="text"
+											value="100"
+											class="ivalidate"
+										/>
+									</td>
+								</tr>
+
+								<td col-span="2" class="error col1--Error"></td>
+
+								<tr class="table-item">
+									<td>
+										<label for="col2">
+											end-of-tern-digits:</label
+										>
+									</td>
+
+									<td>
+										<input
+											id="col2"
+											type="text"
+											value="150"
+											class="ivalidate"
+										/>
+									</td>
+								</tr>
+
+								<td col-span="2" class="error col2--Error"></td>
+
+								<tr class="table-item">
+									<td>
+										<label for="col3">The Vat tax: </label>
+                                </td>
+                                <td>
+                                    <input id="col3" type="text" value="10%" readonly class="ivalidate" />
+                                </td>
+                            </tr>
+
+                            <td col-span="3" class="error col3--Error"></td>
+
+                            <tr class="table-item">
+                                <td>
+                                    <label for="col4">the munber of letter</label
+										>
+									</td>
+									<td>
+										<input
+											id="col4"
+											type="text"
+											value="50"
+											class="ivalidate"
+										/>
+									</td>
+								</tr>
+								<tr class="table-item">
+									<td>
+										<label for="col5"
+											>the total amount payable</label
+										>
+									</td>
+									<td>
+										<p id="total">81400.00</p>
+									</td>
+								</tr>
+								<tr class="table-item">
+									<td>
+										<button
+											onclick="onValidate()"
+											class="btn"
+											onclick=""
+										>
+											get money bill
+										</button>
+									</td>
+									<td>
+										<button class="btn">clear</button>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</form>
+				</div>
+				<table border="1" style="width: 100%">
+					<thead>
+						<tr style="background-color: #c6c1c1">
+							<th>the retail price of living electrickty</th>
+							<th>Unit</th>
+							<th>Price</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>level 1: for kWh from 0 to 50</td>
+							<td>đ/kWh</td>
+							<td>1,480</td>
+						</tr>
+						<tr>
+							<td>level 2: for kWh from 51 to 100</td>
+							<td>đ/kWh</td>
+							<td>1,500</td>
+						</tr>
+						<tr>
+							<td>level 3: for kWh from 101 to about</td>
+							<td>đ/kWh</td>
+							<td>1,800</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+		<script src="./index.js"></script>
+	</body>
+</html>

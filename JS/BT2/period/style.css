@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+}
+
+.wrapper {
+    border: 2px solid green;
+    padding: 20px;
+    width: 40%;
+}
+
+.header-wrapper {
+    margin-bottom: 10px;
+}
+
+.header-wrapper h1 {
+    color: blue;
+}
+
+table {
+    margin: 0 auto;
+}
+
+td {
+    padding: 10px;
+}
+
+.btn {
+    padding: 7px;
+    border-radius: 5px;
+    min-width: 70%;
+}
+
+input[type="text"] {
+    padding: 7px;
+}
+
+.error {
+    color: red;
+}

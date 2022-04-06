@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script defer src="./index.js"></script>
+</head>
+
+<body>
+    <div>
+        <input class="iname" type="text" placeholder="name..." />
+        <input class="iscore" type="number" placeholder="score..." value="5" min="1" max="10" />
+        <button onclick="add()">ADD</button>
+    </div>
+    <br />
+    <button onclick="load()">LOAD</button>
+    <button onclick="getScoreLager(5)">GET >= 5</button>
+    <button onclick="sort()">SORT</button>
+    <div id="root"></div>
+</body>
+
+</html>
